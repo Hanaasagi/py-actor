@@ -1,2 +1,2 @@
 # py-actor
-actor model in python
+actor model implemented in python
