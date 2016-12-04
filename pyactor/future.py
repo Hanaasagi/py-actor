@@ -42,13 +42,13 @@ class Future(object):
     def get(self, timeout=None):
         if self._trigger is not None:
             return self._trigger(timeout)
-        raise NotImplementedError
+        raise NotImplementedError()
 
     def set(self, value=None):
-        raise NotImplementedError
+        raise NotImplementedError()
 
     def set_exception(self, exc_info=None):
-        raise NotImplementedError
+        raise NotImplementedError()
 
     def set_trigger(self, func):
         self._trigger = func
